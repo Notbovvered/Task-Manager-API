@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskManagerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f60a4e03ba7dc48ab531a155a21cf4b7fd0f5690")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+562b8e860722de5b70ca43c5816dca8d549d0acd")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskManagerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskManagerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,11 +5,13 @@ using TaskManagerAPI.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TaskManagerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TasksController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -20,9 +22,9 @@ namespace TaskManagerAPI.Controllers
 
         //GET: api/tasks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TaskItem>>> GetTasks()
+        public IActionResult GetTasks()
         {
-            return await _context.Tasks.ToListAsync();
+            return Ok(new { Message = "This is a protected route!"});
         }
 
         //GET: api/tasks/5
